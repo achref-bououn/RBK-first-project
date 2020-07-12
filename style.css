@@ -20,7 +20,6 @@ li{
 .outerbox{
 	background-image: url(img.png);
 	background-size: contain;
-	width: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 70%;
