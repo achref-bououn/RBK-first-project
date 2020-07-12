@@ -4,12 +4,16 @@
 	<title>GOAT FAN QUIZ</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
 
 </head>
 <body>
 	<div class="outerbox">
 		<header>
-			<div class="upper">Can you make it and become the fans GOAT</div>
+			<div class="up">Can you make it and become the fans GOAT</div>
 		</header>
 		<main>
 			<form class="question" id="q1" data-question="1">
@@ -87,36 +91,49 @@
 					<li><input type="radio" name="q7" value="d">Liverpool FC</li>
 				</ul>
 				<button id="submit">Submit</button>	
-			</form>			<form class="question" id="q1" data-question="1">
-				<h2>1. ho's the player that got the most ballon d'ors</h2>
+			</form>			
+
+			<form class="question" id="q8" data-question="8">
+				<h2>8. what was messi's shirt number in his first professional game</h2>
 				<ul>
-					<li><input type="radio" name="q1" value="a">C.ronaldo</li>
-					<li><input type="radio" name="q1" value="b">Michel Platini</li>
-					<li><input type="radio" name="q1" value="c">Messi</li>
-					<li><input type="radio" name="q1" value="d">Ronaldo</li>
+					<li><input type="radio" name="q8" value="a">10</li>
+					<li><input type="radio" name="q8" value="b">32</li>
+					<li><input type="radio" name="q8" value="c">30</li>
+					<li><input type="radio" name="q8" value="d">19</li>
 				</ul>
 				<button id="submit">Submit</button>	
-			</form>			<form class="question" id="q1" data-question="1">
-				<h2>1. ho's the player that got the most ballon d'ors</h2>
+			</form>			
+
+			<form class="question" id="q9" data-question="9">
+				<h2>9. who scored the first goal for tunisia in the world cup competitions?</h2>
 				<ul>
-					<li><input type="radio" name="q1" value="a">C.ronaldo</li>
-					<li><input type="radio" name="q1" value="b">Michel Platini</li>
-					<li><input type="radio" name="q1" value="c">Messi</li>
-					<li><input type="radio" name="q1" value="d">Ronaldo</li>
+					<li><input type="radio" name="q9" value="a">Ali Kaabi</li>
+					<li><input type="radio" name="q9" value="b">Tarak Dhiab</li>
+					<li><input type="radio" name="q9" value="c">Mohamed Akid</li>
+					<li><input type="radio" name="q9" value="d">Témime Lahzami</li>
 				</ul>
 				<button id="submit">Submit</button>	
-			</form>			<form class="question" id="q1" data-question="1">
-				<h2>1. ho's the player that got the most ballon d'ors</h2>
+			</form>			
+
+			<form class="question" id="q10" data-question="10">
+				<h2>10. where did the first world cup take place?</h2>
 				<ul>
-					<li><input type="radio" name="q1" value="a">C.ronaldo</li>
-					<li><input type="radio" name="q1" value="b">Michel Platini</li>
-					<li><input type="radio" name="q1" value="c">Messi</li>
-					<li><input type="radio" name="q1" value="d">Ronaldo</li>
+					<li><input type="radio" name="q10" value="a">Uruguay</li>
+					<li><input type="radio" name="q10" value="b">Germany</li>
+					<li><input type="radio" name="q10" value="c">Brazil</li>
+					<li><input type="radio" name="q10" value="d">Serbia</li>
 				</ul>
 				<button id="submit">Submit</button>	
 			</form>
+
+			<div id="result"></div>
+
 		</main>
+		<footer>
+			<div class="down">Total: 10 Questions</div>
+		</footer>
 	</div>
 
+	<script src="js.js"></script>
 </body>
 </html>
