@@ -9,7 +9,43 @@ li{
 	list-style: none;
 }
 
+#left{
+	float: left;
+}
+
+#right{
+	float: right;
+}
+
 .outerbox{
+	background-image: url(img.png);
+	background-size: contain;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
 	width: 70%;
-	margin: 30px auto
+	margin: auto;
+}
+
+
+.up{
+	text-align: center;
+}
+
+.down{
+	text-align: center;
+}
+
+header{
+	background: DarkTurquoise;
+	color: AliceBlue;
+	padding: 20px;
+	overflow: auto;
+}
+
+footer{
+	background: DarkTurquoise;
+	color: AliceBlue;
+	padding: 20px;
+	overflow: auto;
 }
