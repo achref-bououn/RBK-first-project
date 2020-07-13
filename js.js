@@ -5,9 +5,6 @@ function save(name,score){
 	localStorage.setItem(name, score);
 }
 
-	
-
-
 $(document).ready(function(){
 	$('.question').hide();
 	$('#init').show();
@@ -19,7 +16,7 @@ $(document).ready(function(){
 					return false;
 				}
 			}
-			alert('Missing searched player name');
+			alert('player not found');
 	})
 	$('#init #start').on('click',function(){
 	var name=$('#inp').val();
