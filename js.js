@@ -1,9 +1,8 @@
 var solutions=['c','a','b','d','c','a','b','c','a','a'];
-var players=[];
 var score=0;
 
 function save(name,score){
-	players.push({player:name,result:score});
+	localStorage.setItem(name, score);
 }
 
 	
@@ -19,16 +18,11 @@ $(document).ready(function(){
 			return false;
 		}
 		else{
-			for(var i=0;i<players.length;i++){
-				var obj=players[i];
-				for(var key in obj){
-					if (obj[key]===find){
-						alert(obj);
-					}
+			for(var key in localStorage){
+				if(key===find){
+					alert(localStorage[key]);
 				}
 			}
-
-			return false;
 		}
 	})
 	$('#init #start').on('click',function(){
