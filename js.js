@@ -163,7 +163,12 @@ function checkAnswer(question){
 		if (test===solutions[9]) {
 			score++;
 		}
-		$('#result').html('<h3>Your final score is: '+score+' out of 10</h3><a href="html.html">RETRY AGAIN !!!</a>')
+		if(score>5){
+			$('#result').html('<h3>Your final score is: '+score+' out of 10</h3><a href="html.html">RETRY AGAIN !!!</a><audio autoplay><source src="win.mp3"></audio>');
+		}
+		else{
+			$('#result').html('<h3>Your final score is: '+score+' out of 10</h3><a href="html.html">RETRY AGAIN !!!</a><audio autoplay><source src="fail.mp3"></audio>');
+		}
 	}
 	return score;
 }
