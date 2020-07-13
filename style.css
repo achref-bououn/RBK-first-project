@@ -7,14 +7,12 @@ body{
 
 li{
 	list-style: none;
+	padding: auto;
 }
 
-#left{
-	float: left;
-}
-
-#right{
-	float: right;
+.question{
+	height: 400px;
+	padding: auto;
 }
 
 .outerbox{
@@ -26,6 +24,9 @@ li{
 	margin: auto;
 }
 
+.first{
+	text-align: center;
+}
 
 .up{
 	text-align: center;

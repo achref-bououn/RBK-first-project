@@ -13,17 +13,13 @@ $(document).ready(function(){
 	$('#init').show();
 	$('#search').on('click',function(){
 		var find=$('#find').val();
-		if(find===''){
-			alert('Missing searched player name');
-			return false;
-		}
-		else{
 			for(var key in localStorage){
 				if(key===find){
 					alert(localStorage[key]);
+					return false;
 				}
 			}
-		}
+			alert('Missing searched player name');
 	})
 	$('#init #start').on('click',function(){
 	var name=$('#inp').val();
